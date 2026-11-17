@@ -4,7 +4,7 @@
 
 | Что | Источник | Версия | Лицензия |
 |---|---|---|---|
-| Скиллы 1С: `cf-*`, `cfe-*`, `db-*`, `epf-*`, `erf-*`, `form-*`, `help-add`, `img-grid`, `interface-*`, `meta-*`, `mxl-*`, `role-*`, `skd-*`, `subsystem-*`, `support-edit`, `template-*`, `v8-xsd-fetch`, `web-*`, `xdto-*` | [Nikolay-Shirokov/cc-1c-skills](https://github.com/Nikolay-Shirokov/cc-1c-skills), каталог `.agents/skills/`, ветка `port-agents` | актуальное состояние ветки при запуске; установщик выводит коммит | MIT |
+| Скиллы 1С: `cf-*`, `cfe-*`, `db-*`, `epf-*`, `erf-*`, `form-*`, `help-add`, `img-grid`, `interface-*`, `meta-*`, `mxl-*`, `role-*`, `skd-*`, `subsystem-*`, `support-edit`, `template-*`, `v8-xsd-fetch`, `xdto-*`; `web-*` не ставятся (`exclude` в `skills.json`) | [Nikolay-Shirokov/cc-1c-skills](https://github.com/Nikolay-Shirokov/cc-1c-skills), каталог `.agents/skills/`, ветка `port-agents` | актуальное состояние ветки при запуске; установщик выводит коммит | MIT |
 | `mermaid-diagrams` | [ccheney/robust-skills](https://github.com/ccheney/robust-skills), каталог `skills/mermaid-diagrams/`, ветка `main` | актуальное состояние ветки при запуске; установщик выводит коммит | MIT, Copyright (c) 2026 robust-skills contributors |
 | `powershell-safe-invocation` | [Misaka-Mikoto-Tech/agent-skills](https://github.com/Misaka-Mikoto-Tech/agent-skills), каталог `skills/powershell-safe-invocation/`, ветка `main` | актуальное состояние ветки при запуске; установщик выводит коммит | MIT, Copyright (c) 2026 Misaka Mikoto |
 | `grillme` | Локальная установка `~/.agents/skills/grillme` | состояние локального источника при запуске | не указана в локальном источнике |

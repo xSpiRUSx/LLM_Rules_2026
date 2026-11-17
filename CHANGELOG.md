@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+### Changed
+
+- `scripts/Install-Skills.ps1`: поле `exclude` в `skills.json` — маски скиллов источника, которые не ставятся.
+- `skills.json`: скиллы `web-*` из cc-1c-skills не ставятся.
+- `scripts/Install-Rules.ps1`: в `.gitignore` проекта добавляется `/.agents/skills/` — скиллы не коммитятся, их ставит установщик на каждом компьютере.
+
 ## [0.3.0] - 2026-11-17
 
 ### Added

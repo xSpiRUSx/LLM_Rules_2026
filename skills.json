@@ -6,7 +6,8 @@
       "type": "git",
       "url": "https://github.com/Nikolay-Shirokov/cc-1c-skills.git",
       "ref": "port-agents",
-      "path": ".agents/skills"
+      "path": ".agents/skills",
+      "exclude": ["web-*"]
     },
     {
       "name": "mermaid-diagrams",

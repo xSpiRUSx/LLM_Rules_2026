@@ -38,6 +38,11 @@ try {
         $skills = if ($source.skill) { @(Get-Item -LiteralPath $root) }
                   else { @(Get-ChildItem -LiteralPath $root -Directory | Where-Object { Test-Path -LiteralPath (Join-Path $_.FullName 'SKILL.md') }) }
         if ($skills.Count -eq 0) { throw "No skills found in $($source.name)." }
+        # exclude: маски имён (-like) скиллов источника, которые не ставятся.
+        $exclude = @($source.exclude | Where-Object { $_ })
+        if ($exclude.Count -gt 0) {
+            $skills = @($skills | Where-Object { $n = $_.Name; -not ($exclude | Where-Object { $n -like $_ }) })
+        }
         foreach ($skill in $skills) {
             $name = if ($source.skill) { [string]$source.skill } else { $skill.Name }
             if ($name -notmatch '^[a-zA-Z0-9][a-zA-Z0-9_-]*$') { throw "Invalid skill name: $name" }

@@ -66,7 +66,7 @@ try {
 
     $gitignore = Join-Path $project '.gitignore'
     $text = if (Test-Path -LiteralPath $gitignore) { Get-Content -LiteralPath $gitignore -Raw } else { '' }
-    $missing = @('.v8-project.json', '/.claude/skills') | Where-Object { $_ -notin ($text -split '\r?\n') }
+    $missing = @('.v8-project.json', '/.claude/skills', '/.agents/skills/') | Where-Object { $_ -notin ($text -split '\r?\n') }
     if ($missing) {
         $prefix = if ($text -and -not $text.EndsWith("`n")) { "`n" } else { '' }
         [IO.File]::AppendAllText($gitignore, $prefix + ($missing -join "`n") + "`n")
