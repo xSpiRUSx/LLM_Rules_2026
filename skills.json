@@ -9,6 +9,22 @@
       "path": ".agents/skills"
     },
     {
+      "name": "mermaid-diagrams",
+      "type": "git",
+      "url": "https://github.com/ccheney/robust-skills.git",
+      "ref": "main",
+      "path": "skills/mermaid-diagrams",
+      "skill": "mermaid-diagrams"
+    },
+    {
+      "name": "powershell-safe-invocation",
+      "type": "git",
+      "url": "https://github.com/Misaka-Mikoto-Tech/agent-skills.git",
+      "ref": "main",
+      "path": "skills/powershell-safe-invocation",
+      "skill": "powershell-safe-invocation"
+    },
+    {
       "name": "grillme",
       "type": "home",
       "path": ".agents/skills/grillme",

@@ -8,6 +8,7 @@
 
 - `rules/AGENTS.md`: анализ кода конфигурации обязательно через MCP-сервер `rlm-tools-bsl`; если сервер не подключён — вопрос пользователю; по окончании анализа сессия закрывается через `rlm_end`.
 - `rules/AGENTS.md`: субагенты запускаются только по прямой просьбе пользователя или по инструкции навыка.
+- Скиллы `mermaid-diagrams` из [robust-skills](https://github.com/ccheney/robust-skills) и `powershell-safe-invocation` из [agent-skills](https://github.com/Misaka-Mikoto-Tech/agent-skills) в `skills.json`.
 - `README.md`: подготовка компьютера — установка `rlm-tools-bsl` и регистрация сервера в агенте.
 
 ## [0.2.0] - 2026-11-17
