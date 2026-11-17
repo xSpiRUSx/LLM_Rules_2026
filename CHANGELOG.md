@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-11-17
+
 ### Changed
 
 - `scripts/Install-Skills.ps1`: поле `exclude` в `skills.json` — маски скиллов источника, которые не ставятся.
