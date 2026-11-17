@@ -9,6 +9,8 @@
 - `rules/AGENTS.md`: анализ кода конфигурации обязательно через MCP-сервер `rlm-tools-bsl`; если сервер не подключён — вопрос пользователю; по окончании анализа сессия закрывается через `rlm_end`.
 - `rules/AGENTS.md`: проверка изменённых BSL-модулей через BSL Language Server; если анализатора нет — вопрос пользователю.
 - `README.md`: установка BSL Language Server при подготовке компьютера.
+- `rules/instructions/github.md` — порядок работы с issue, ветками, коммитами и PR.
+- `rules/github/` — шаблоны issue (`feature`, `bug`, `epic`) и PR; установщик добавляет в `.github/` проекта недостающие файлы, существующие не трогает.
 - `rules/AGENTS.md`: субагенты запускаются только по прямой просьбе пользователя или по инструкции навыка.
 - Скиллы `mermaid-diagrams` из [robust-skills](https://github.com/ccheney/robust-skills) и `powershell-safe-invocation` из [agent-skills](https://github.com/Misaka-Mikoto-Tech/agent-skills) в `skills.json`.
 - `README.md`: подготовка компьютера — установка `rlm-tools-bsl` и регистрация сервера в агенте.

@@ -10,6 +10,7 @@
 | `rules/AGENTS.md` | Главный файл правил для агентов, одинаковый во всех проектах; короткий, ссылается на остальное |
 | `rules/instructions/` | Инструкции по темам — «как делать» |
 | `rules/docs/` | Справочные материалы — «как устроено», агент читает по необходимости |
+| `rules/github/` | Шаблоны issue и PR для `.github/` проекта |
 | `skills.json` | Источники скиллов и ветки, из которых устанавливаются обновления |
 | `scripts/Install-Rules.ps1` | Установка и обновление правил и скиллов в проекте |
 | `scripts/Install-Skills.ps1` | Установка и обновление скиллов из списка источников |
@@ -78,6 +79,7 @@
 | `AGENTS.md` | `rules/AGENTS.md` | Перезаписывается |
 | `.agents/instructions/`, `.agents/docs/` | `rules/instructions/`, `rules/docs/` | Заменяются целиком |
 | `.agents/project-context.md` | `rules/project-context.md` | Создаётся один раз, дальше не трогается |
+| `.github/ISSUE_TEMPLATE/`, `.github/pull_request_template.md` | `rules/github/` | Недостающие файлы добавляются, существующие не трогаются |
 | `.agents/VERSION` | Версия, указанная при установке | Перезаписывается |
 | `.agents/skills/` | Источники из `skills.json` | См. ниже |
 | `.claude/skills` | Ссылка (junction) на `.agents/skills` для Claude Code | Пересоздаётся |

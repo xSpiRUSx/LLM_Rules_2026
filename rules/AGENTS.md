@@ -23,6 +23,7 @@
 | Запросы, массовые данные | `.agents/instructions/queries-performance.md` |
 | Создаёшь или меняешь форму | `.agents/instructions/form-ui.md` |
 | Сборка, загрузка, обновление базы | `.agents/instructions/build-deploy.md` |
+| Issue, ветки, коммиты, PR | `.agents/instructions/github.md` |
 
 Если `project-context.md` не заполнен — сначала заполни его, опросив пользователя.
 
@@ -63,7 +64,7 @@
 
 Не выходи за границы задачи.
 посторонние находки — предложение отдельной задачи. 
-Все задачи ведутся через github issues. 
+Все задачи ведутся через GitHub Issues, порядок — в `.agents/instructions/github.md`.
 
 ## Автономность и принятие решений
 

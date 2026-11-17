@@ -46,6 +46,15 @@ try {
         New-Item -ItemType Directory -Path $dst | Out-Null
         Get-ChildItem -LiteralPath (Join-Path $rules $dir) -Exclude '.gitkeep' | Copy-Item -Destination $dst -Recurse
     }
+    # Шаблоны GitHub кладутся только при отсутствии: проект может подправить их под себя.
+    $github = Join-Path $rules 'github'
+    foreach ($file in Get-ChildItem -LiteralPath $github -File -Recurse) {
+        $dst = Join-Path $project ('.github' + $file.FullName.Substring($github.Length))
+        if (-not (Test-Path -LiteralPath $dst)) {
+            New-Item -ItemType Directory -Path (Split-Path $dst -Parent) -Force | Out-Null
+            Copy-Item -LiteralPath $file.FullName -Destination $dst
+        }
+    }
     $context = Join-Path $agents 'project-context.md'
     if (-not (Test-Path -LiteralPath $context)) { Copy-Item -LiteralPath (Join-Path $rules 'project-context.md') -Destination $context }
 
