@@ -42,8 +42,9 @@
 
 ## Подготовка компьютера
 
-Правила требуют MCP-сервер [rlm-tools-bsl](https://github.com/Dach-Coin/rlm-tools-bsl) для анализа кода 1С.
-Он ставится один раз на компьютер, а не в проект.
+Правила требуют MCP-сервер [rlm-tools-bsl](https://github.com/Dach-Coin/rlm-tools-bsl) для анализа кода 1С
+и [BSL Language Server](https://github.com/1c-syntax/bsl-language-server) для проверки кода.
+Они ставятся один раз на компьютер, а не в проект.
 
 1. Установите службу по [инструкции автора](https://github.com/Dach-Coin/rlm-tools-bsl#установка) (PowerShell от имени администратора).
 2. Зарегистрируйте сервер в агенте для своего пользователя:
@@ -53,6 +54,9 @@
    ```
 
    Для других агентов сервер прописывается в их настройках пользователя тем же адресом.
+3. Скачайте `bsl-language-server_win.zip` со [страницы выпусков](https://github.com/1c-syntax/bsl-language-server/releases/latest),
+   распакуйте (Java внутри архива, отдельно её ставить не нужно) и добавьте папку с `bsl-language-server.exe` в `PATH`.
+   Проверка: `bsl-language-server --help`.
 
 ## Установка правил в проект
 
